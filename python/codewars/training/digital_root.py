@@ -4,12 +4,15 @@
 # continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
 
 def digital_root(n):
-    pass
+    string_n = str(n)
+    if len(string_n) > 1:
+        return digital_root(sum(int(digit) for digit in string_n))
+    else:
+        return n
 
 
 if __name__ == '__main__':
-    print(digital_root(16))
-test.assert_equals(digital_root(16), 7)
-test.assert_equals(digital_root(942), 6)
-test.assert_equals(digital_root(132189), 6)
-test.assert_equals(digital_root(493193), 2)
+    print(digital_root(16))  # 7
+    print(digital_root(942))  # 6
+    print(digital_root(132189))  # 6
+    print(digital_root(493193))  # 2
