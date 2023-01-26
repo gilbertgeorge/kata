@@ -16,22 +16,6 @@
 # returned object will be a integer.
 
 
-# def solve(eq):
-#     sides = eq.replace(' ', '').split('=')
-#     if sides[0] == 'x':
-#         return eval(sides[1])
-#     elif sides[1] == 'x':
-#         return eval(sides[0])
-#     elif '-x' not in sides[0] and '-x' not in sides[1]:
-#         return eval(sides[1].replace('x', '0')) - eval(sides[0].replace('x', '0'))
-#     else:
-#         if sides[0] == '-x':
-#             return eval(f'-{eval(sides[1])}')
-#         elif sides[1] == '-x':
-#             return eval(f'-{eval(sides[0])}')
-#         else:
-#             return eval(sides[0].replace('-x', '0')) - eval(sides[1].replace('-x', '0'))
-
 def solve(eq):
     sides = eq.replace(' ', '').split('=')
     if 'x' in sides[1]:
