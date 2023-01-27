@@ -23,20 +23,21 @@
 # In Fortran - as in any other language - the returned string is not permitted to contain any
 # redundant trailing whitespace: you can use dynamically allocated character strings.
 
-# ******************* Not working for very large numbers *******************
-# ********************** Need to revisit this solution *********************
-def prime_factors(num):
+
+def prime_factors(n):
+    if n < 0:
+        n = -n
     factors = set()
-    while num % 2 == 0:
+    while n % 2 == 0:
         factors.add(2)
-        num //= 2
-    for i in range(3, int(abs(num) ** 0.5) + 1, 2):
-        while num % i == 0:
-            factors.add(i)
-            num //= i
-    if num > 2:
-        factors.add(num)
-    return factors
+        n = n / 2
+    for i in range(3, int(n ** 0.5) + 1):
+        while n % i == 0:
+            factors.add(int(i))
+            n = n / i
+    if n > 2:
+        factors.add(int(n))
+    return sorted(factors)
 
 
 def sum_for_list(lst):
