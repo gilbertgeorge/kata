@@ -22,41 +22,28 @@
 # number of tests = 100
 # 49 < n < 5000
 
-
-# def mult_triangle(n):
-#     row_size = 2 * n - 1
-#     row = [(lambda x: x * n if x <= n else (row_size - x + 1) * n)(x) for x in range(1, row_size + 1)]
-#     row_sum = [sum(row), sum([x for x in row if x % 2 == 0]), sum([x for x in row if x % 2 != 0])]
-#     if n == 1:
-#         return row_sum
-#     else:
-#         prior_row = mult_triangle(n - 1)
-#         return [row_sum[x] + prior_row[x] for x in range(len(row_sum))]
-
-
-# def generate_row(n):
-#     row_size = 2 * n - 1
-#     return [(lambda x: x * n if x <= n else (row_size - x + 1) * n)(x) for x in range(1, row_size + 1)]
-
-
+# testing
 def generate_row(n):
     row = [x * n for x in range(1, n + 1)]
     return row + row[-2::-1]
 
 
+def get_row_sum(n):
+    total_sum = n ** 3
+    if n % 2 == 0:
+        return [total_sum, total_sum, 0]
+    else:
+        even_sum = n * (n**2 // 2)
+        return [total_sum, even_sum, even_sum + n]
+
+
 def mult_triangle(n):
-    total_sum = [0, 0, 0]
+    all_sums = []
     while n > 0:
-        row = generate_row(n)
-        for x in row:
-            if x % 2 == 0:
-                total_sum[1] += x
-            else:
-                total_sum[2] += x
-        # total_sum[0] += sum(row)
+        row_sum = get_row_sum(n)
+        all_sums.append(row_sum)
         n -= 1
-    total_sum[0] = total_sum[1] + total_sum[2]
-    return total_sum
+    return [sum(x) for x in zip(*all_sums)]
 
 
 if __name__ == '__main__':
@@ -67,21 +54,18 @@ if __name__ == '__main__':
     print(mult_triangle(5), [225, 144, 81])
     print(mult_triangle(6))
     print(mult_triangle(7))
+    print(mult_triangle(20))
     print()
-    # print(mult_triangle(5000))
-    print(generate_row(1))
-    print(generate_row(2))
-    print(generate_row(3))
-    print(generate_row(4))
-    print(generate_row(5))
-    print(generate_row(6))
-    print(generate_row(7))
-    # print(generate_row_reflection(1))
-    # print(generate_row_reflection(2))
-    # print(generate_row_reflection(3))
-    # print(generate_row_reflection(4))
-    # print(generate_row_reflection(5))
-    # print(generate_row_reflection(6))
+    print(mult_triangle(5000))
+
+    # print(generate_row(1))
+    # print(generate_row(2))
+    # print(generate_row(3))
+    # print(generate_row(4))
+    # print(generate_row(5))
+    # print(generate_row(6))
+    # print(generate_row(7))
+
 
 
 
