@@ -13,7 +13,7 @@ function solution(number){
         .reduce((acc, cur) => acc + cur, 0);
 }
 
-
+console.log(solution(0))
 console.log(solution(10))
 console.log(solution(20))
 console.log(solution(200))
