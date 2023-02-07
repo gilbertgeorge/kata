@@ -22,9 +22,6 @@ public class UniqueOrderTests
         var actualThird = UniqueOrder.UniqueInOrder(new int[] {1,2,2,3,3});
         
         //assert
-        // Assert.AreEqual(expectedFirst, actualFirst);
-        // Assert.AreEqual(expectedSecond, actualSecond);
-        // Assert.AreEqual(expectedThird, actualThird);
         CollectionAssert.AreEqual(expectedFirst.ToList(), actualFirst.ToList());
         CollectionAssert.AreEqual(expectedSecond.ToList(), actualSecond.ToList());
         CollectionAssert.AreEqual(expectedThird.ToList(), actualThird.ToList());
