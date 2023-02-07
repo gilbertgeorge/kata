@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-public class Kata
+namespace codewars.kyu8;
+
+public class UnfinishedLoop
 {
     public static List<int> CreateList(int number)
     {
