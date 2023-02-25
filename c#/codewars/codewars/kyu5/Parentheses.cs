@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class Parentheses
+public static class Parentheses
 {
     public static bool ValidParentheses(string input)
     {
