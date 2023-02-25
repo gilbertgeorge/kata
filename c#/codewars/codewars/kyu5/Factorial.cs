@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class Factorial
+public static class Factorial
 {
     public static int TrailingZeros(int n)
     {

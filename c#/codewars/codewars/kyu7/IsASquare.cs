@@ -1,6 +1,6 @@
 namespace codewars.kyu7;
 
-public class IsASquare
+public static class IsASquare
 {
     public static bool IsSquare(int n)
     {

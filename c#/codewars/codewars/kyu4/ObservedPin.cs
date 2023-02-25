@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu4;
 
-public class ObservedPin
+public static class ObservedPin
 {
     private static readonly Dictionary<char, char[]> AdjacentCodes = new Dictionary<char, char[]>
     {

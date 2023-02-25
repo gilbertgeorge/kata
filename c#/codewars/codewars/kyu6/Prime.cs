@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu6;
 
-public class Prime
+public static class Prime
 {
     public static bool IsPrime(int n)
     {

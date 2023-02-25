@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace codewars.kyu5;
 
-public class PickPeaks
+public static class PickPeaks
 {
     public static Dictionary<string, List<int>> GetPeaks(int[] arr)
     {

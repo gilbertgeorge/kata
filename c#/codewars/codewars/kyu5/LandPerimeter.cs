@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class LandPerimeter
+public static class LandPerimeter
 {
     public static string Calculate(string[] map)
     {

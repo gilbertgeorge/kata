@@ -1,6 +1,6 @@
 namespace codewars.kyu5;
 
-public class GapInPrimes
+public static class GapInPrimes
 {
     private static bool IsPrime(long n)
     {

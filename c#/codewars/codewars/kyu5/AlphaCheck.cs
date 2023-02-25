@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace codewars.kyu5;
 
-public class AlphaCheck
+public static class AlphaCheck
 {
     public static bool Alphanumeric(string str)
     {

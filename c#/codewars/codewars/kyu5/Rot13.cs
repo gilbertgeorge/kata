@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class Rot13
+public static class Rot13
 {
     public static string Encode(string message)
     {

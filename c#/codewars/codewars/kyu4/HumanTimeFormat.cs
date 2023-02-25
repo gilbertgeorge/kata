@@ -1,6 +1,6 @@
 namespace codewars.kyu4;
 
-public class HumanTimeFormat
+public static class HumanTimeFormat
 {
     public static string formatDuration(int seconds)
     {

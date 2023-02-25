@@ -1,6 +1,6 @@
 namespace codewars.kyu6;
 
-public class AreTheySame
+public static class AreTheySame
 {
     public static bool comp(int[]? a, int[]? b)
     {

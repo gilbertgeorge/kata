@@ -2,7 +2,7 @@
 
 namespace codewars.kyu5;
 
-public class PerimeterOfSquares
+public static class PerimeterOfSquares
 {
     // private static Dictionary<BigInteger, BigInteger> FibonacciCache(BigInteger position, Dictionary<BigInteger, BigInteger> memoDict)
     // {

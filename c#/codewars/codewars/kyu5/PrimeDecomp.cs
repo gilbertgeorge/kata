@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class PrimeDecomp
+public static class PrimeDecomp
 {
     public static string factors(int lst) 
     {

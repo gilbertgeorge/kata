@@ -3,7 +3,7 @@ using System.Text;
 
 namespace codewars.kyu4;
 
-public class RomanNumerals
+public static class RomanNumerals
 {
     private static readonly Dictionary<char, int> FromRomanNumerals = new Dictionary<char, int>
     {

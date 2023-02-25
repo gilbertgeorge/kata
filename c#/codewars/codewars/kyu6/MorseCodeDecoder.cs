@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu6;
 
-public class MorseCodeDecoder
+public static class MorseCodeDecoder
 {
     private const string WORD_SEPARATOR = "   ";
     private const string LETTER_SEPARATOR = " ";

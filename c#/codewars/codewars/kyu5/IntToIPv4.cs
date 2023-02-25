@@ -1,6 +1,6 @@
 namespace codewars.kyu5;
 
-public class IntToIPv4
+public static class IntToIPv4
 {
     public static string UInt32ToIP(uint ip)
     {

@@ -1,6 +1,6 @@
 namespace codewars.kyu4;
 
-public class Matrix
+public static class Matrix
 {
     public static int Determinant(int[][] matrix)
     {

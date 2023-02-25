@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu7;
 
-public class Mumbling
+public static class Mumbling
 {
     public static String Accum(string s) 
     {

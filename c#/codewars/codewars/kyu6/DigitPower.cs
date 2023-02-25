@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu6;
 
-public class DigitPower
+public static class DigitPower
 {
     public static long digPow(int n, int p) 
     {

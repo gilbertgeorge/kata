@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class FirstNonRepeating
+public static class FirstNonRepeating
 {
     public static string FirstNonRepeatingLetter(string s)
     {

@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace codewars.kyu4;
 
-public class TopWords
+public static class TopWords
 {
     public static List<string> Top3(string s)
     {

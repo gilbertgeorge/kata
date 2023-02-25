@@ -1,6 +1,6 @@
 namespace codewars.kyu4;
 
-public class DoubleLinear
+public static class DoubleLinear
 {
     public static int DblLinear (int n)
     {

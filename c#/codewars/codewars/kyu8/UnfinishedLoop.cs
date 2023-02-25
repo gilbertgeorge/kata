@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace codewars.kyu8;
 
-public class UnfinishedLoop
+public static class UnfinishedLoop
 {
     public static List<int> CreateList(int number)
     {

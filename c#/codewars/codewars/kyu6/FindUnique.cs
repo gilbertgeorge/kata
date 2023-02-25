@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu6;
 
-public class FindUnique
+public static class FindUnique
 {
     // Write a function called findUnique which returns the only unique number from an array.
     // All numbers in the unsorted array are present twice, except for one number which is only present once.

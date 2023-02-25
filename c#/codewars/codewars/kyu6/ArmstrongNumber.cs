@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu6;
 
-public class ArmstrongNumber
+public static class ArmstrongNumber
 {
     // Your code must return true or false (not 'true' and 'false') depending upon whether the given number
     // is a Narcissistic number in base 10.

@@ -1,6 +1,6 @@
 namespace codewars.kyu5;
 
-public class ZerosEnd
+public static class ZerosEnd
 {
     public static int[] MoveZeroes(int[] arr)
     {

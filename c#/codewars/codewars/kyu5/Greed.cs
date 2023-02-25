@@ -1,6 +1,6 @@
 namespace codewars.kyu5;
 
-public class Greed
+public static class Greed
 {
     // Three 1's => 1000 points
     // Three 6's =>  600 points

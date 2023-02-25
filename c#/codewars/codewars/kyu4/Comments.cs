@@ -1,6 +1,6 @@
 namespace codewars.kyu4;
 
-public class Comments
+public static class Comments
 {
     public static string StripComments(string text, string[] commentSymbols)
     {

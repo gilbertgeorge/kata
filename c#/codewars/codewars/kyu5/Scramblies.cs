@@ -1,6 +1,6 @@
 ﻿namespace codewars.kyu5;
 
-public class Scramblies
+public static class Scramblies
 {
     public static bool Scramble(string str1, string str2)
     {

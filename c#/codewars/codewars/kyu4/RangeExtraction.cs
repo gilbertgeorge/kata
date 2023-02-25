@@ -1,6 +1,6 @@
 namespace codewars.kyu4;
 
-public class RangeExtraction
+public static class RangeExtraction
 {
     public static string Extract(int[] args)
     {

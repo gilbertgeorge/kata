@@ -1,6 +1,6 @@
 namespace codewars.kyu5;
 
-public class SumSquaredDivisors
+public static class SumSquaredDivisors
 {
     //Find all integers between m and n (m and n integers with 1 <= m <= n) such that the sum of their squared divisors is itself a square.
     public static string listSquared(long m, long n)

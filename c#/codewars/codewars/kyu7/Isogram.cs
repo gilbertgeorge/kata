@@ -1,6 +1,6 @@
 namespace codewars.kyu7;
 
-public class Isogram
+public static class Isogram
 {
     public static bool IsIsogram(string str) 
     {
