@@ -7,8 +7,8 @@ namespace codewars.kyu4;
 // The digits are sequential, decrementing‡: 4321
 // The digits are a palindrome: 1221 or 73837
 // The digits match one of the values in the awesomePhrases array
-// † For incrementing sequences, 0 should come after 9, and not before 1, as in 7890.
-// ‡ For decrementing sequences, 0 should come after 1, and not before 9, as in 3210.
+// † For incrementing sequences, 0 should come after 9, and not before 1, as in 7890
+// ‡ For decrementing sequences, 0 should come after 1, and not before 9, as in 3210
 public static class CarMileage
 {
     public static int IsInteresting(int number, List<int> awesomePhrases)
